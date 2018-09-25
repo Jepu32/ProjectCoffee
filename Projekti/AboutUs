@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en, fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Project</title>
+    <link rel="stylesheet" href="coffee.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"></script>
+</head>
+<body>
+<script language="JavaScript">
+
+</script>
+<div>
+    <header>
+        <div class="nav">
+            <ul>
+                <li><a href="">Coffeelovers</a></li>
+                <li><a href="">Flavors</a></li>
+                <li><a href="">How to</a></li>
+                <li><a class="selected" href="">About us</a></li>
+            </ul>
+        </div>
+        <br>
+        <br>
+        <br>
+
+        <br>
+        <div id="about">
+            <main>
+                <div>
+                    <h2>About Us</h2>
+                </div>
+                <div class="para">
+                    <p>
+                        Something about us.........
+                    </p>
+                    <p>
+                        something more about us and pictures....
+                    </p>
+
+                </div>
+            </main>
+        </div>
+
+        <br>
+        <div>
+            <h1 id="map" style="width:600px; height: 400px; margin: auto"></h1>
+        </div>
+    </header>
+</div>
+
+
+<script>
+  var long= 60.163252;
+  var lat= 24.931607;
+
+  const kartta = L.map('map').setView([long, lat], 16);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',}).addTo(kartta);
+
+  L.marker([long, lat]).addTo(kartta)
+  .bindPopup('COFFEELOVERS')
+  .openPopup()
+
+
+</script>
+</body>
+
+</html>
