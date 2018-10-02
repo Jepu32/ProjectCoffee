@@ -1,89 +1,6 @@
 body {
     background-image: url("black.jpg");
     margin: 0;
-    font-family: Avenir, Montserrat, sans-serif;
-    color: white;
-}
-header {
-    color: #fff;
-    text-align: center;
-    border-radius: 7px;
-
-}
-.head {
-    text-align: center;
-
-}
-h1 {
-    padding: 15px 5px 5px 5px;
-    display: inline-block;
-    margin-top: 100px;
-}
-ul {
-    padding: 0;
-    width: 100%;
-    margin: 0;
-    background-color: #000000d0;
-    position: fixed;
-
-}
-
-.nav {
-    text-align: center;
-}
-.nav li {
-    list-style-type: none;
-    display: inline-block;
-    padding: 10px;
-
-}
-.nav a {
-    color: #fff;
-    display: inline-block;
-    text-decoration: none;
-    border-radius: 4px;
-    padding: 10px 30px 10px 30px;
-}
-.nav a:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-.nav .selected {
-    background-color: darkred;
-}
-main {
-    margin: 8px;
-    text-align: center;
-}
-
-.para {
-    margin-left: 150px;
-    margin-right: 150px;
-}
-img {
-    width: 50%;
-}
-@media screen and (max-width: 811px) {
-    header {
-
-    }
-    .nav li {
-        padding: 5px;
-    }
-    h1 {
-        margin-top: 100px;
-        margin-left: 5px;
-        margin-right: 5px;
-    }
-    img {
-        width: 90%;
-    }
-    .para {
-        margin: auto;
-    }
-}
-body {
-    background-image: url("black.jpg");
-    margin: 0;
     font-family: Avenir, sans-serif;
     color: white;
 }
@@ -247,10 +164,93 @@ img {
         margin: auto;
     }
 }
+body {
+    background-image: url("black.jpg");
+    margin: 0;
+    font-family: Avenir, sans-serif;
+    color: white;
+}
+header {
+    color: #fff;
+    text-align: center;
+    border-radius: 7px;
 
-/* flavours.html:n CSS */
+}
+.head {
+    text-align: center;
 
-#flavourtext{
+}
+h1 {
+    padding: 15px 5px 5px 5px;
+    display: inline-block;
+    margin-top: 100px;
+}
+ul {
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    background-color: #000000d0;
+    position: fixed;
+
+}
+
+.nav {
+    text-align: center;
+}
+.nav li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+
+}
+.nav a {
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 10px 30px 10px 30px;
+}
+.nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.nav .selected {
+    background-color: darkred;
+}
+main {
+    margin: 8px;
+    text-align: center;
+}
+
+.para {
+    margin-left: 150px;
+    margin-right: 150px;
+}
+img {
+    width: 50%;
+}
+@media screen and (max-width: 811px) {
+    header {
+
+    }
+    .nav li {
+        padding: 5px;
+    }
+    h1 {
+        margin-top: 100px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    img {
+        width: 90%;
+    }
+    .para {
+        margin: auto;
+    }
+}
+
+/* flavors.html:n CSS */
+
+#flavor{
 
     display: inline-block;
     margin-top:150px;
@@ -259,4 +259,4 @@ img {
 
 }
 
-/* flavours.html:n CSS */
+/* flavors.html:n CSS */
