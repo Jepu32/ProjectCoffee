@@ -13,7 +13,7 @@
     <header>
         <div class="nav">
             <ul>
-                <li><a href="Coffee.html">Cup o'Roast</a></li>
+                <li><a href="Coffee.html">Cup o'Roast ☕™</a></li>
                 <li><a href="Flavor.html">Flavors</a></li>
                 <li><a href="HowTo.html">How to</a></li>
                 <li><a class="selected" href="AboutUs.html">About us</a></li>
@@ -54,10 +54,12 @@
   let lat= 24.931607;
 
   const kartta = L.map('map').setView([long, lat], 16);
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',}).addTo(kartta);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+      {attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> ' +
+            'contributors',}).addTo(kartta);
 
   L.marker([long, lat]).addTo(kartta)
-  .bindPopup('COFFEELOVERS')
+  .bindPopup("Cup o'Roast")
   .openPopup()
 
 
