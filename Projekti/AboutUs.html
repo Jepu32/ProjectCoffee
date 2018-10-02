@@ -13,10 +13,10 @@
     <header>
         <div class="nav">
             <ul>
-                <li><a href="">Cup o'Roast</a></li>
-                <li><a href="">Flavors</a></li>
-                <li><a href="">How to</a></li>
-                <li><a class="selected" href="">About us</a></li>
+                <li><a href="Coffee.html">Cup o'Roast</a></li>
+                <li><a href="Flavor.html">Flavors</a></li>
+                <li><a href="HowTo.html">How to</a></li>
+                <li><a class="selected" href="AboutUs.html">About us</a></li>
             </ul>
         </div>
         <br>
@@ -50,8 +50,8 @@
 </div>
 
 <script language="JavaScript">
-  var long= 60.163252;
-  var lat= 24.931607;
+  let long= 60.163252;
+  let lat= 24.931607;
 
   const kartta = L.map('map').setView([long, lat], 16);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',}).addTo(kartta);
