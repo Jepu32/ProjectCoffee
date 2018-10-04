@@ -9,25 +9,19 @@
     <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"></script>
 </head>
 <body>
+
+<div>
     <header>
         <div class="nav">
             <ul>
-                <li><a href="Coffee.html">Cup o'Roast</a></li>
+                <li><a href="Coffee.html">Cup o'Roast ☕™</a></li>
                 <li><a href="Flavor.html">Flavors</a></li>
                 <li><a href="HowTo.html">How to</a></li>
                 <li><a class="selected" href="AboutUs.html">About us</a></li>
             </ul>
         </div>
-    </header>
 
-
-    <br>
-    <br>
-    <br>
-    <br>
-
-
-        <div id="about">
+        <div id="text">
             <main>
                 <div>
                     <h2>About Us</h2>
@@ -45,19 +39,33 @@
             </main>
         </div>
 
-    <div id="map" style="width: 600px; height: 400px; margin: auto"></div>
+        <br>
+        <div>
+            <h1 id="map"></h1>
+        </div>
+    </header>
+    
+    <div id="footer">
+        Copyright &copy; 2018 Benjamin B
+    </div>
+    
+</div>
 
-    <script language="JavaScript">
-      let long= 60.163252;
-      let lat= 24.931607;
-      const kartta = L.map('map').setView([long, lat], 16);
-      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-          {attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> ' +
-                'contributors',}).addTo(kartta);
-      L.marker([long, lat]).addTo(kartta)
-      .bindPopup("Cup o'Roast")
-      .openPopup()
-    </script>
+<script language="JavaScript">
+  let long= 60.163252;
+  let lat= 24.931607;
+
+  const kartta = L.map('map').setView([long, lat], 16);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+      {attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> ' +
+            'contributors',}).addTo(kartta);
+
+  L.marker([long, lat]).addTo(kartta)
+  .bindPopup("Cup o'Roast")
+  .openPopup()
+
+
+</script>
 </body>
 
 </html>
