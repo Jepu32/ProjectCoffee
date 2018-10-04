@@ -1,5 +1,7 @@
 body {
-    background-image: url("black.jpg");
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),
+    url("bg.jpg")no-repeat center bottom fixed;
+    background-size: cover;
     margin: 0;
     font-family: Avenir, sans-serif;
     color: white;
@@ -61,6 +63,9 @@ main {
 }
 img {
     width: 50%;
+}
+#text {
+    padding-top: 80px;
 }
 @media screen and (max-width: 811px) {
     header {
