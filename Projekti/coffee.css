@@ -73,7 +73,14 @@ img {
     height: 400px;
     margin: auto;
 }
-@media screen and (max-width: 811px) {
+#footer {
+    clear: both;
+    padding: 5px;
+    background-color: transparent;
+    color: white;
+    text-align: right;
+}
+@media screen and (max-width: 650px) {
     header {
 
     }
@@ -99,14 +106,6 @@ img {
 }
 
 /* flavours.html:n CSS */
-
-.grid {
-    height: 25%;
-    width: 25%;
-    display:inline-grid;
-    padding:20px;
-}
-
 
 
 
