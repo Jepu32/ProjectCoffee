@@ -142,6 +142,7 @@ video {
     overflow:auto;
     position:relative;
     cursor:pointer;
+    width:100%;
 
 
 }
