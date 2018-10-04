@@ -65,6 +65,11 @@ img {
     width: 600px;
     height: 400px;
 }
+video {
+    width: 600px;
+    height: 400px;
+    padding: 0;
+}
 #text {
     padding-top: 80px;
 }
@@ -94,14 +99,23 @@ img {
     }
     #map {
         width: 350px;
-        height: 250px;
+        height: 225px;
     }
     img {
         width: 350px;
         height: 225px;
     }
+    video {
+        width: 350px;
+        height: 225px;
+    }
     .para {
         margin: auto;
+    }
+}
+@media screen and (max-width: 920px) {
+    video {
+
     }
 }
 
