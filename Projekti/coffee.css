@@ -121,6 +121,69 @@ video {
 
 /* flavours.html:n CSS */
 
+.imggrid{
+
+    display:inline-grid;
+    grid-template-columns:auto auto auto;
+    grid-gap:30px;
+
+}
+
+
+.grid {
+    height:200px;
+    width:300px;
+    padding:10px;
+    cursor:pointer;
+
+}
+
+.clearfix {
+    overflow:auto;
+    position:relative;
+    height:25%;
+    width:25%;
+
+}
+.clearfix:hover .overlay{
+
+    opacity: 0.6;
+}
+.gridtext{
+    text-align: center;
+    font-size:small;
+}
+
+.overlay {
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    height:auto;
+    width:auto;
+    opacity:0;
+    transition: .5s ease;
+    background-color: black;
+}
+.overtext{
+    color:white;
+    font-size: 20px;
+    position:absolute;
+    top:45%;
+    bottom:55%;
+    left: 45%;
+    right: 55%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+
+
 
 
 /* flavours.html:n CSS */
