@@ -134,13 +134,14 @@ video {
     height:200px;
     width:300px;
     padding:10px;
-    cursor:pointer;
+    
 
 }
 
 .clearfix {
     overflow:auto;
     position:relative;
+    cursor:pointer;
 
 
 }
