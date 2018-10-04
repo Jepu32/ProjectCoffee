@@ -79,11 +79,14 @@ video {
     margin: auto;
 }
 #footer {
+    position: fixed;
+    right: 0;
+    bottom: 0;
     clear: both;
     padding: 5px;
     background-color: transparent;
     color: white;
-    text-align: right;
+   
 }
 @media screen and (max-width: 650px) {
     header {
@@ -111,11 +114,6 @@ video {
     }
     .para {
         margin: auto;
-    }
-}
-@media screen and (max-width: 920px) {
-    video {
-
     }
 }
 
