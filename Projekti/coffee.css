@@ -1,3 +1,5 @@
+/* Base */
+
 body {
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),
     url("bg.jpg")no-repeat center bottom fixed;
@@ -10,7 +12,6 @@ header {
     color: #fff;
     text-align: center;
     border-radius: 7px;
-
 }
 .head {
     text-align: center;
@@ -22,12 +23,11 @@ h1 {
     margin-top: 100px;
 }
 ul {
+    position: absolute;
     padding: 0;
     width: 100%;
     margin: 0;
     background-color: #000000d0;
-    position: fixed;
-
 }
 
 .nav {
@@ -68,7 +68,6 @@ img {
 video {
     width: 600px;
     height: 400px;
-    padding: 0;
 }
 #text {
     padding-top: 80px;
@@ -86,8 +85,13 @@ video {
     padding: 5px;
     background-color: transparent;
     color: white;
-   
 }
+
+/* Base */
+
+/* Responsive */
+
+
 @media screen and (max-width: 650px) {
     header {
 
@@ -115,74 +119,68 @@ video {
     .para {
         margin: auto;
     }
+    .imggrid {
+
+    }
 }
+
+/* Responsive */
+
 
 /* flavours.html:n CSS */
 
-.imggrid{
 
-    display:inline-grid;
-    grid-template-columns:auto auto auto;
-    grid-gap:30px;
+.imggrid {
 
-}
-
-
-.grid {
-    height:200px;
-    width:300px;
-    padding:10px;
-    
-
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    grid-gap: 30px;
 }
 
 .clearfix {
-    overflow:auto;
-    position:relative;
-    cursor:pointer;
-    width:100%;
-
-
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    height: 200px;
+    width: 300px;
+}
+.clearfix img {
+    width: 300px;
+    height: 200px;
 }
 .clearfix:hover .overlay{
-
     opacity: 0.6;
 }
 .gridtext{
     text-align: center;
-    font-size:small;
+    font-size: small;
 }
 
 .overlay {
     position: absolute;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    height:auto;
-    width:auto;
-    opacity:0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: auto;
+    opacity: 0;
     transition: .5s ease;
     background-color: black;
 }
 .overtext{
-    color:white;
+    color: white;
     font-size: 20px;
-    position:absolute;
-    top:45%;
-    bottom:55%;
-    left: 45%;
-    right: 55%;
-    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
 }
 
 .underline{
     text-decoration: underline;
 }
-
-
-
 
 
 /* flavours.html:n CSS */
