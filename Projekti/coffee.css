@@ -89,44 +89,6 @@ video {
 
 /* Base */
 
-/* Responsive */
-
-
-@media screen and (max-width: 650px) {
-    header {
-
-    }
-    .nav li {
-        padding: 5px;
-    }
-    h2 {
-        margin-top: 70px;
-        margin-left: 5px;
-        margin-right: 5px;
-    }
-    #map {
-        width: 350px;
-        height: 225px;
-    }
-    img {
-        width: 350px;
-        height: 225px;
-    }
-    video {
-        width: 350px;
-        height: 225px;
-    }
-    .para {
-        margin: auto;
-    }
-    .imggrid {
-
-    }
-}
-
-/* Responsive */
-
-
 /* flavours.html:n CSS */
 
 
@@ -134,19 +96,19 @@ video {
 
     display: inline-grid;
     grid-template-columns: auto auto;
-    grid-gap: 30px;
+    grid-gap: 80px;
 }
 
 .clearfix {
     overflow: hidden;
     position: relative;
     cursor: pointer;
-    height: 200px;
-    width: 300px;
+    width: 400px;
+    height: 300px;
 }
 .clearfix img {
-    width: 300px;
-    height: 200px;
+    width: 400px;
+    height: 300px;
 }
 .clearfix:hover .overlay{
     opacity: 0.6;
@@ -180,3 +142,63 @@ video {
 
 
 /* flavours.html:n CSS */
+
+/* Responsive */
+
+
+
+@media screen and (max-width: 1130px) {
+    .imggrid {
+        grid-gap: 30px;
+    }
+    .clearfix {
+        width: 300px;
+        height: 200px;
+    }
+    .clearfix img {
+        width: 300px;
+        height: 200px;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+    .nav li {
+        padding: 5px;
+    }
+    h2 {
+        margin-top: 70px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    #map {
+        width: 300px;
+        height: 200px;
+    }
+    img {
+        width: 300px;
+        height: 200px;
+    }
+    video {
+        width: 300px;
+        height: 200px;
+    }
+    .para {
+        margin: auto;
+    }
+    .imggrid {
+        grid-gap: 15px;
+    }
+    .clearfix {
+        width: 150px;
+        height: 100px;
+    }
+    .clearfix img {
+        width: 150px;
+        height: 100px;
+    }
+}
+
+
+
+/* Responsive */
