@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cup o'Roast</title>
+    <link rel="stylesheet" href="coffee.css">
+</head>
+<body>
+<div>
+    <header>
+        <div id="nav">
+            <ul>
+                <li><a class="selected"  href="CoffeeFin.html">Cup o'Roast ☕™</a></li>
+                <li><a href="FlavorsFin.html">Maut</a></li>
+                <li><a href="HowToFin.html">Kuinka</a></li>
+                <li><a href="AboutUsFin.html">Meistä</a></li>
+                <li><a href="Coffee.html">Eng</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div id="text">
+        <main>
+            <div>
+                <h2>Esittely</h2>
+                <p>Kahvia monia eri makuja.</p>
+                <div class="para">
+                    <p>
+                        The beginning of a new era. Life without coffee is a life without love... You need it!
+                    </p>
+                    <p>
+                        Our product is a one of a kind.
+                        To ensure the best customer experience we've brought you a way to creat your own product from scratch.
+                        To make it simple: You, our client have all the necessary tools to construct anything from one of our factories right to your home,
+                        and the best part is, just with a couple of clicks.
+                    </p>
+                    <br>
+                </div>
+                <img src="bar.jpg" alt="logo">
+            </div>
+
+        </main>
+    </div>
+    <div id="footer">
+        Copyright &copy; 2018 Cup o'Roast
+    </div>
+</div>
+<script language="JavaScript">
+</script>
+</body>
+</html>
