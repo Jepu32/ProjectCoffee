@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cup o'Roast</title>
+    <link rel="stylesheet" href="coffee.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"></script>
+</head>
+<body>
+
+<div>
+    <header>
+        <div id="nav">
+            <ul>
+                <li><a href="CoffeeFin.html">Cup o'Roast ☕™</a></li>
+                <li><a href="FlavorsFin.html">Maut</a></li>
+                <li><a href="HowToFin.html">Kuinka</a></li>
+                <li><a class="selected" href="AboutUsFin.html">Meistä</a></li>
+                <li><a href="aboutus.html">Eng</a></li>
+            </ul>
+        </div>
+
+        <div id="text">
+            <main>
+                <div>
+                    <h2>Tietoja meistä</h2>
+                </div>
+                <div class="para">
+                    <p>
+                        Me olemme kolme kahvia rakastavaa henkilöä Helsingistä. Kahvi on tärkeä osa jokaista päivää.
+                        Hengitämme, syömme, mutta enimmäkseen juomme kahvia ja päivä ei ala ilman sitä.
+                    </p>
+                    <p>
+                        Muuta meistä ja kuvia....
+                    </p>
+
+                </div>
+            </main>
+        </div>
+
+        <br>
+        <div>
+            <h1 id="map"></h1>
+        </div>
+    </header>
+
+    <div id="footer">
+        Copyright &copy; 2018 Cup o'Roast
+    </div>
+
+</div>
+
+<script language="JavaScript">
+    let long= 60.163252;
+    let lat= 24.931607;
+    const kartta = L.map('map').setView([long, lat], 16);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> ' +
+                'contributors',}).addTo(kartta);
+    L.marker([long, lat]).addTo(kartta)
+        .bindPopup("Cup o'Roast")
+        .openPopup()
+</script>
+</body>
+
+</html>
