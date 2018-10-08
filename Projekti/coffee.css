@@ -94,19 +94,19 @@ video {
 
     display: inline-grid;
     grid-template-columns: auto auto;
-    grid-gap: 80px;
+    grid-gap: 50px;
 }
 
 .clearfix {
     overflow: hidden;
     position: relative;
     cursor: pointer;
-    width: 400px;
-    height: 300px;
+    width: 300px;
+    height: 200px;
 }
 .clearfix img {
-    width: 400px;
-    height: 300px;
+    width: 300px;
+    height: 200px;
 }
 .clearfix:hover .overlay{
     opacity: 0.6;
@@ -135,8 +135,8 @@ video {
 }
 
 .modal{
-    display:none;
-    position:fixed;
+    display: none;
+    position: fixed;
     z-index:1;
     padding-top:20px;
     left:0;
@@ -153,6 +153,7 @@ video {
     background-color: rgba(0, 0, 0, 0.8);
     margin:15% auto;
     padding:20px;
+    border-radius: 7px;
     width:60%;
     animation-name:animatetop;
     animation-duration: 0.5s;
@@ -184,11 +185,13 @@ video {
 /* Responsive */
 
 
-@media screen and (max-width: 650px) {
-    .nav li {
+@media screen and (max-width: 715px) {
+    #nav li {
         padding: 5px;
     }
-
+    #nav ul {
+        position: sticky;
+    }
     #map {
         width: 300px;
         height: 200px;
@@ -201,6 +204,9 @@ video {
         width: 300px;
         height: 200px;
     }
+    #text {
+    padding-top: 10px;
+    }
     .para {
         margin: auto;
     }
@@ -208,26 +214,18 @@ video {
         grid-gap: 15px;
     }
     .clearfix {
-        width: 150px;
-        height: 100px;
+        width: 140px;
+        height: 95px;
     }
     .clearfix img {
-        width: 150px;
-        height: 100px;
+        width: 140px;
+        height: 95px;
     }
 }
 
 @media screen and (max-width: 1130px) {
     .imggrid {
         grid-gap: 30px;
-    }
-    .clearfix {
-        width: 300px;
-        height: 200px;
-    }
-    .clearfix img {
-        width: 300px;
-        height: 200px;
     }
 }
 
