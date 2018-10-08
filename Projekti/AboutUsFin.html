@@ -18,7 +18,7 @@
                 <li><a href="FlavorsFin.html">Maut</a></li>
                 <li><a href="HowToFin.html">Kuinka</a></li>
                 <li><a class="selected" href="AboutUsFin.html">Meistä</a></li>
-                <li><a href="aboutus.html">🇺🇸</a></li>
+                <li><a href="AboutUs.html">🇺🇸</a></li>
             </ul>
         </div>
 
@@ -44,6 +44,13 @@
         <div>
             <h1 id="map"></h1>
         </div>
+
+        <div>
+            <h2>Yhteystiedot</h2>
+            <img src="" alt="Benjamin">
+            <img src="" alt="Jere">
+            <img src="" alt="Viivi">
+        </div>
     </header>
 
     <div id="footer">
@@ -53,15 +60,15 @@
 </div>
 
 <script language="JavaScript">
-    let long= 60.163252;
-    let lat= 24.931607;
-    const kartta = L.map('map').setView([long, lat], 16);
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-        {attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> ' +
-                'contributors',}).addTo(kartta);
-    L.marker([long, lat]).addTo(kartta)
-        .bindPopup("Cup o'Roast")
-        .openPopup()
+  let long= 60.163252;
+  let lat= 24.931607;
+  const kartta = L.map('map').setView([long, lat], 16);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+      {attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> ' +
+            'contributors',}).addTo(kartta);
+  L.marker([long, lat]).addTo(kartta)
+  .bindPopup("Cup o'Roast")
+  .openPopup()
 </script>
 </body>
 
