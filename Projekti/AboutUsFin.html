@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cup o'Roast</title>
-    <link rel="stylesheet" href="coffee.css">
+    <link rel="stylesheet" href="uuscoffee.css">
+    <script src="coffee.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"/>
     <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="parallax.min.js"></script>
 </head>
 <body>
 
@@ -18,58 +21,70 @@
                 <li><a href="FlavorsFin.html">Maut</a></li>
                 <li><a href="HowToFin.html">Kuinka</a></li>
                 <li><a class="selected" href="AboutUsFin.html">Meistä</a></li>
-                <li><a href="AboutUs.html">🇺🇸</a></li>
+                <li><a href="aboutus.html">🇺🇸</a></li>
             </ul>
         </div>
 
-        <div id="text">
-            <main>
-                <div>
-                    <h2>Tietoja meistä</h2>
-                </div>
-                <div class="para">
-                    <p>
-                        Me olemme kolme kahvia rakastavaa henkilöä Helsingistä. Kahvi on tärkeä osa jokaista päivää.
-                        Hengitämme, syömme, mutta enimmäkseen juomme kahvia ja päivä ei ala ilman sitä.
-                    </p>
-                    <p>
-                        Muuta meistä ja kuvia....
-                    </p>
-
-                </div>
-            </main>
+        <div class="parallax" data-parallax="scroll" data-z-index="1" data-image-src="ME.jpeg">
+            <div class="info">
+                <br>
+                <br>
+                <br>
+                <br>
+                ME ROASTILAISET
+            </div>
         </div>
+
+        <div class="container">
+            <p style="color: black">
+                <br>
+                <br>
+                Cup o'Roast on yhdistelmä tiedettä, taidetta ja kahvia.
+                Cup o'Roast is a combination of science, art and coffee.
+                <br>
+                <br>
+                <br>
+                We breathe, eat but mostly we drink it and the day won't start
+                without it.
+                Viljelemme omaa kahvipapuamme (THE BEAN), Helsingin edustalla Santahaminan saarella.
+                <br>
+                <br>
+                <br>
+                We are located in the corner of Lönnrotinkatu and Abrahaminkatu in Helsinki.
+                Kahvilamme sijaitsee Lönnrotinkadun ja Abrahaminkadun kulmassa. (Bulevardi 31) :D
+                <br>
+                <br>
+                <br>
+                VÄLKOMMEN!!!!!!!!! Teretulemasta
+                <br>
+                <br>
+            </p>
+        </div>
+
+
 
         <br>
         <div>
             <h1 id="map"></h1>
         </div>
 
-        <div>
-            <h2>Yhteystiedot</h2>
-            <img src="" alt="Benjamin">
-            <img src="" alt="Jere">
-            <img src="" alt="Viivi">
+        <div id="footer">
+            Copyright &copy; 2018 Cup o'Roast
         </div>
-    </header>
 
-    <div id="footer">
-        Copyright &copy; 2018 Cup o'Roast
-    </div>
 
-</div>
 
-<script language="JavaScript">
-  let long= 60.163252;
-  let lat= 24.931607;
-  const kartta = L.map('map').setView([long, lat], 16);
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-      {attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> ' +
-            'contributors',}).addTo(kartta);
-  L.marker([long, lat]).addTo(kartta)
-  .bindPopup("Cup o'Roast")
-  .openPopup()
-</script>
+        <script language="JavaScript">
+          let long= 60.163252;
+          let lat= 24.931607;
+          const kartta = L.map('map').setView([long, lat], 16);
+          L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+            {attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> ' +
+                'contributors',}).addTo(kartta);
+          L.marker([long, lat]).addTo(kartta)
+            .bindPopup("Cup o'Roast")
+            .openPopup()
+        </script>
 </body>
 
 </html>
