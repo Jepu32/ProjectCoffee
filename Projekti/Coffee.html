@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cup o'Roast</title>
-    <link rel="stylesheet" href="coffee.css">
+    <link rel="stylesheet" href="uuscoffee.css">
     <script src="coffee.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="parallax.min.js"></script>
 </head>
 <body>
 
-<div>
+
     <header>
         <div id="nav">
             <ul>
@@ -22,33 +26,133 @@
         </div>
     </header>
 
-        <div id="text">
-            <main>
-                <div>
-                    <h2>Introduction</h2>
-                    <p>Coffee comes in alot of different types and flavors.</p>
-                    <div class="para">
-                        <p>
-                            The beginning of a new era. Life without coffee is a life without love... You need it!
-                        </p>
-                        <p>
-                            Our product is a one of a kind.
-                            To ensure the best customer experience we've brought you a way to creat your own product from scratch.
-                            To make it simple: You, our client have all the necessary tools to construct anything from one of our factories right to your home,
-                            and the best part is, just with a couple of clicks.
-                        </p>
-                        <br>
-                    </div>
-                    <img src="bar.jpg" alt="logo">
-                </div>
-
-            </main>
+    <div class="parallax" data-parallax="scroll" data-z-index="1" data-image-src="shoppi.jpg">
+        <div class="info">
+            <br>
+            <br>
+            <br>
+            <br>
+            THE CUP / THE SHOP
         </div>
-            <div id="footer">
-                Copyright &copy; 2018 Cup o'Roast
-            </div>
-</div>
+    </div>
+
+
+    <div class="container">
+        <p style="color: black">
+            <br>
+            <br>
+            Cup o'Roast on yhdistelmä tiedettä, taidetta ja kahvia.
+            Cup o'Roast is a combination of science, art and coffee.
+            <br>
+            <br>
+            <br>
+            We breathe, eat but mostly we drink it and the day won't start
+            without it.
+            Viljelemme omaa kahvipapuamme (THE BEAN), Helsingin edustalla Santahaminan saarella.
+            <br>
+            <br>
+            <br>
+            We are located in the corner of Lönnrotinkatu and Abrahaminkatu in Helsinki.
+            Kahvilamme sijaitsee Lönnrotinkadun ja Abrahaminkadun kulmassa. (Bulevardi 31) :D
+            <br>
+            <br>
+            <br>
+            VÄLKOMMEN!!!!!!!!! Teretulemasta
+            <br>
+            <br>
+        </p>
+    </div>
+
+
+    <div class="parallax" data-parallax="scroll" data-z-index="1" data-image-src="kupit.jpg">
+        <div class="info">
+            <br>
+            <br>
+            <br>
+            <br>
+            OUR VISION / VISIO
+        </div>
+    </div>
+
+    <div class="container">
+        <p style="color: black">
+            <br>
+            <br>
+            Visionamme on luoda markkinoiden paras, most eco-friendly product, THE BEAN!
+            <br>
+            <br>
+            <br>
+            ja sen ympärille toimiva, pientuottajia tukeva kahvilayritys... tms...
+            <br>
+            <br>
+            <br>
+            Kaikki tuotteemme alle XX km päästä.
+            <br>
+            <br>
+            <br>
+            lorem ipsum .....
+            <br>
+            <br>
+        </p>
+    </div>
+
+
+
+
+    <div class="parallax" data-parallax="scroll" data-z-index="1" data-image-src="papuja.jpg">
+        <div class="info">
+            <br>
+            <br>
+            <br>
+            <br>
+            THE BEAN / THE PAPU
+        </div>
+    </div>
+
+    <div class="container">
+        <br>
+        <br>
+        <p style="color: black">We grow and roast our beans just outside Helsinki, on the island of Santahamina. ;D
+            THE BEAN on Suomessa viljelty, ensiluokkainen kahvipapu. Miten papu on viljelty ja tuotettu ja paahdettu...
+            <br>
+            <br>
+            <br>
+            So we have the freshest coffee in the city, everyday! jauhatus diibadaaba, joka päivä tarjolla FRESH FUCKING COFFEE
+            <br>
+            <br>
+        </p>
+
+        <h1 id="map"></h1>
+
+        <br>
+        <br>
+    </div>
+
+
+
+
+    <div id="footer" style="color: black">
+        Copyright &copy; 2018 Cup o'Roast
+    </div>
+
+
+
 <script language="JavaScript">
+  let long= 60.145780;
+  let lat= 25.047112;
+
+
+  const kartta = L.map('map').setView([long, lat], 12);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+    {attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> ' +
+        'contributors',}).addTo(kartta);
+  L.marker([long, lat]).addTo(kartta)
+    .bindPopup("Bean o'Roast")
+    .openPopup()
+
+
+
 </script>
 </body>
+
 </html>
