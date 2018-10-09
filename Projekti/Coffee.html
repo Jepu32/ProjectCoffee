@@ -12,27 +12,24 @@
     <script src="parallax.min.js"></script>
 </head>
 <body>
-
-
+<div>
     <header>
         <div id="nav">
             <ul>
-                <li><a class="selected" href="Coffee.html">Cup o'Roast ™</a></li>
-                <li><a href="Flavor.html">Flavors</a></li>
+                <li><a class="selected"  href="Coffee.html">Cup o'Roast ™</a></li>
+                <li><a href="Flavors.html">Flavors</a></li>
                 <li><a href="HowTo.html">How to</a></li>
                 <li><a href="AboutUs.html">About us</a></li>
                 <li><a href="CoffeeFin.html">🇫🇮</a></li>
             </ul>
         </div>
     </header>
-
     <div class="parallax" data-parallax="scroll" data-z-index="1" data-image-src="shoppi.jpg">
         <div class="info">
             <br>
             <br>
             <br>
-            <br>
-            THE CUP / THE SHOP
+            THE ROASTERS / ROASTILAISET
         </div>
     </div>
 
@@ -41,23 +38,20 @@
         <p style="color: black">
             <br>
             <br>
-            Cup o'Roast on yhdistelmä tiedettä, taidetta ja kahvia.
-            Cup o'Roast is a combination of science, art and coffee.
+            We are three coffee lovers living in Helsinki, Finland.
+            <br>
+            <br>
+            <br>
+            Coffee plays a big role in our everyday life.
             <br>
             <br>
             <br>
             We breathe, eat but mostly we drink it and the day won't start
             without it.
-            Viljelemme omaa kahvipapuamme (THE BEAN), Helsingin edustalla Santahaminan saarella.
             <br>
             <br>
             <br>
-            We are located in the corner of Lönnrotinkatu and Abrahaminkatu in Helsinki.
-            Kahvilamme sijaitsee Lönnrotinkadun ja Abrahaminkadun kulmassa. (Bulevardi 31) :D
-            <br>
-            <br>
-            <br>
-            VÄLKOMMEN!!!!!!!!! Teretulemasta
+            That why we decided to start growing our own coffee bean.
             <br>
             <br>
         </p>
@@ -69,7 +63,6 @@
             <br>
             <br>
             <br>
-            <br>
             OUR VISION / VISIO
         </div>
     </div>
@@ -78,19 +71,20 @@
         <p style="color: black">
             <br>
             <br>
-            Visionamme on luoda markkinoiden paras, most eco-friendly product, THE BEAN!
+            We are three coffee lovers living in Helsinki, Finland.
             <br>
             <br>
             <br>
-            ja sen ympärille toimiva, pientuottajia tukeva kahvilayritys... tms...
+            Coffee plays a big role in our everyday life.
             <br>
             <br>
             <br>
-            Kaikki tuotteemme alle XX km päästä.
+            We breathe, eat but mostly we drink it and the day won't start
+            without it.
             <br>
             <br>
             <br>
-            lorem ipsum .....
+            That why we decided to start growing our own coffee beans.
             <br>
             <br>
         </p>
@@ -104,7 +98,6 @@
             <br>
             <br>
             <br>
-            <br>
             THE BEAN / THE PAPU
         </div>
     </div>
@@ -112,12 +105,11 @@
     <div class="container">
         <br>
         <br>
-        <p style="color: black">We grow and roast our beans just outside Helsinki, on the island of Santahamina. ;D
-            THE BEAN on Suomessa viljelty, ensiluokkainen kahvipapu. Miten papu on viljelty ja tuotettu ja paahdettu...
+        <p style="color: black">We grow our beans just outside Helsinki, on the island of Santahamina. ;D
             <br>
             <br>
             <br>
-            So we have the freshest coffee in the city, everyday! jauhatus diibadaaba, joka päivä tarjolla FRESH FUCKING COFFEE
+            So we have the freshest coffee in the city, everyday!
             <br>
             <br>
         </p>
@@ -135,7 +127,7 @@
         Copyright &copy; 2018 Cup o'Roast
     </div>
 
-
+</div>
 
 <script language="JavaScript">
   let long= 60.145780;
@@ -144,15 +136,15 @@
 
   const kartta = L.map('map').setView([long, lat], 12);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-    {attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> ' +
-        'contributors',}).addTo(kartta);
+      {attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> ' +
+            'contributors',}).addTo(kartta);
+
   L.marker([long, lat]).addTo(kartta)
-    .bindPopup("Bean o'Roast")
-    .openPopup()
+  .bindPopup("Bean o'Roast")
+  .openPopup()
 
 
 
 </script>
 </body>
-
 </html>
