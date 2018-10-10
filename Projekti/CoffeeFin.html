@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cup o'Roast</title>
-    <link rel="stylesheet" href="uuscoffee.css">
+    <link rel="stylesheet" href="CoffeeMain.css">
     <script src="coffee.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"/>
     <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"></script>
@@ -13,23 +13,23 @@
 </head>
 <body>
 
-
+<div>
 <header>
     <div id="nav">
         <ul>
-            <li><a class="selected" href="CoffeeFin.html">Cup o'Roast ™</a></li>
+            <li><a class="selected" href="CoffeeFin.html">Cup o'Roast</a></li>
             <li><a href="FlavorsFin.html">Maut</a></li>
-            <li><a href="HowToFin.html">Kuinka</a></li>
+            <li><a href="HowToFin.html">Tutoriaali</a></li>
             <li><a href="AboutUsFin.html">Meistä</a></li>
             <li><a href="Coffee.html">🇺🇸</a></li>
         </ul>
     </div>
 </header>
 
-<div class="parallax" data-parallax="scroll" data-z-index="1" data-image-src="shoppi.jpg">
+<div class="parallax" data-parallax="scroll" data-z-index="1" data-image-src="CoffeeShop.jpg">
     <div class="info">
         <br><br><br>
-        KAHVILAMME
+        THE COMPANY
     </div>
 </div>
 
@@ -42,17 +42,17 @@
 </div>
 
 
-<div class="parallax" data-parallax="scroll" data-z-index="1" data-image-src="kupit.jpg">
+<div class="parallax" data-parallax="scroll" data-z-index="1" data-image-src="aroma.jpg">
     <div class="info">
         <br><br><br>
-        VISIOMME
+        OUR VISION
     </div>
 </div>
 
 <div class="container">
     <p>Paahtimon yhteyteen vuonna 2013 perustettu kahvila tarjoaa laadukkaita, tarkoin valittuja ja tutkittuja kahvilaatuja.</p>
     <p>Suosimme lähiruokaa ja pientuottajien tuotteita.
-        Tarjoamme COR:ssa pieniä suolaisia ja makeita herkkuja, jotka ovat kaikki tuotettu alle 10km säteellä.</p>
+        Tarjoamme COR:ssa pieniä suolaisia ja makeita herkkuja, jotka ovat kaikki tuotettu alle 10 km säteellä.</p>
     <p>Yrityksemme prioriteettina on toimia vastuullisesti ja ympäristöyställisesti.</p>
 </div>
 
@@ -62,7 +62,7 @@
 <div class="parallax" data-parallax="scroll" data-z-index="1" data-image-src="papuja.jpg">
     <div class="info">
         <br><br><br>
-        PAPUMME
+        THE ROASTERY
     </div>
 </div>
 
@@ -75,32 +75,36 @@
     <br>
 </div>
 
+    <div class="footer">
+        <p>
+            <strong class="otsikot" >CUP O'ROAST</strong><br><br>
+            Paahtimo & kahvila<br>
+            Lönnrotinkatu 32<br>
+            00180<br>
+            HELSINKI<br>
+            <a href="https://www.facebook.com/groups/2107970076086665/" target="_blank">Facebook / Cup o'Roast</a>
+        </p>
+        <p>
+            <strong class="otsikot">INFO</strong><br><br>
+            info@cuporoast.cof<br>
+            +358411234567<br>
+            Infopuhelin palvelee arkisin<br>
+            9:00 - 16:00
 
+        </p>
+        <p>
+            <strong class="otsikot">AUKIOLOAJAT</strong><br><br>
+            Kahvila ja kahvimyymälä<br>
+            avoinna:<br>
+            ma - to 6:00 - 18:00<br>
+            perjantaisin 6:00 - 21:00<br>
+            la - su 10:00 - 20:00<br>
+            Tervetuloa!
 
+        </p>
+    </div>
 
-<div id="footer" style="color: black">
-    Copyright &copy; 2018 Cup o'Roast
 </div>
-
-
-
-<script language="JavaScript">
-  let long= 60.145780;
-  let lat= 25.047112;
-
-
-  const kartta = L.map('map').setView([long, lat], 12);
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-      {attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> ' +
-            'contributors',}).addTo(kartta);
-  L.marker([long, lat]).addTo(kartta)
-  .bindPopup("Bean o'Roast")
-  .openPopup()
-
-
-
-</script>
 </body>
-
 </html>
 
