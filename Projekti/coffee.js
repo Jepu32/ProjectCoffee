@@ -30,97 +30,97 @@ var span6 = document.getElementsByClassName("close")[5];
 
 // eka ikkuna-----------------------------------------------------------------------------------------
 pop1.onclick = function(){
-    modal1.style.display = "block";
-    console.log("toimii");
+  modal1.style.display = "block";
+  console.log("toimii");
 };
 
 span1.onclick = function(){
-    modal1.style.display ="none";
+  modal1.style.display ="none";
 };
 
 window.addEventListener("click",function(event){
-    if (event.target === modal1){
-        modal1.style.display ="none";
-    }
+  if (event.target === modal1){
+    modal1.style.display ="none";
+  }
 });
 
 // toka ikkuna-----------------------------------------------------------------------------------------
 pop2.onclick = function(){
-    modal2.style.display = "block";
-    console.log("toimii");
+  modal2.style.display = "block";
+  console.log("toimii");
 };
 
 span2.onclick = function(){
-    modal2.style.display ="none";
+  modal2.style.display ="none";
 };
 
 window.addEventListener("click",function(event){
-    if (event.target === modal2){
-        modal2.style.display ="none";
-    }
+  if (event.target === modal2){
+    modal2.style.display ="none";
+  }
 });
 
 // kolmas ikkuna-----------------------------------------------------------------------------------------
 pop3.onclick = function(){
-    modal3.style.display = "block";
-    console.log("toimii");
+  modal3.style.display = "block";
+  console.log("toimii");
 };
 
 span3.onclick = function(){
-    modal3.style.display ="none";
+  modal3.style.display ="none";
 };
 
 window.addEventListener("click",function(event){
-    if (event.target === modal3){
-        modal3.style.display ="none";
-    }
+  if (event.target === modal3){
+    modal3.style.display ="none";
+  }
 });
 
 // neljäs ikkuna-----------------------------------------------------------------------------------------
 pop4.onclick = function(){
-    modal4.style.display = "block";
-    console.log("toimii");
+  modal4.style.display = "block";
+  console.log("toimii");
 };
 
 span4.onclick = function(){
-    modal4.style.display ="none";
+  modal4.style.display ="none";
 };
 
 window.addEventListener("click",function(event){
-    if (event.target === modal4){
-        modal4.style.display ="none";
-    }
+  if (event.target === modal4){
+    modal4.style.display ="none";
+  }
 });
 
 // viides ikkuna-----------------------------------------------------------------------------------------
 pop5.onclick = function(){
-    modal5.style.display = "block";
-    console.log("toimii");
+  modal5.style.display = "block";
+  console.log("toimii");
 };
 
 span5.onclick = function(){
-    modal5.style.display ="none";
+  modal5.style.display ="none";
 };
 
 window.addEventListener("click",function(event){
-    if (event.target === modal5){
-        modal5.style.display ="none";
-    }
+  if (event.target === modal5){
+    modal5.style.display ="none";
+  }
 });
 
 // kuudes ikkuna-----------------------------------------------------------------------------------------
 pop6.onclick = function(){
-    modal6.style.display = "block";
-    console.log("toimii");
+  modal6.style.display = "block";
+  console.log("toimii");
 };
 
 span6.onclick = function(){
-    modal6.style.display ="none";
+  modal6.style.display ="none";
 };
 
 window.addEventListener("click",function(event){
-    if (event.target === modal6){
-        modal6.style.display ="none";
-    }
+  if (event.target === modal6){
+    modal6.style.display ="none";
+  }
 });
 //flvaor ja flavorFin js-------------------------------------------------------------------------------------------------------------------------------------
