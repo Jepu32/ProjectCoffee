@@ -64,15 +64,6 @@ main {
     height: 40vw;
     margin: auto;
 }
-#footer {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    clear: both;
-    padding: 5px;
-    background-color: transparent;
-    color: white;
-}
 
 /* Base */
 
@@ -140,11 +131,6 @@ main {
 
 
 /*flex box*/
-
-.feedback{
-    color:black;
-    text-align: center;
-}
 
 
 /* AboutUs.html:n CSS */
