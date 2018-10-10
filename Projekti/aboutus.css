@@ -5,18 +5,18 @@ body {
     color: white;
     margin: 0;
 }
+
 header {
     color: #fff;
     text-align: center;
     border-radius: 7px;
 }
+
 .head {
     text-align: center;
 
 }
-h2 {
 
-}
 #nav ul {
     position: center;
     padding: 0;
@@ -28,12 +28,14 @@ h2 {
 #nav {
     text-align: center;
 }
+
 #nav li {
     list-style-type: none;
     display: inline-block;
     padding: 10px;
 
 }
+
 #nav a {
     color: #fff;
     display: inline-block;
@@ -41,35 +43,24 @@ h2 {
     border-radius: 4px;
     padding: 10px 30px 10px 30px;
 }
+
 #nav a:hover {
     background-color: rgba(255, 255, 255, 0.1);
 }
+
 #nav .selected {
     background-color: darkred;
 }
+
 main {
     margin: 8px;
     text-align: center;
 }
 
-.para {
-    margin-left: 150px;
-    margin-right: 150px;
-}
-img {
-    width: 600px;
-    height: 400px;
-}
-video {
-    width: 600px;
-    height: 400px;
-}
-#text {
-    padding-top: 40px;
-}
+
 #map {
-    width: 800px;               /*VAIHTO LEVEEMPÄÄN*//*VAIHTO LEVEEMPÄÄN*//*VAIHTO LEVEEMPÄÄN*/
-    height: 400px;
+    width: 60vw;               /*VAIHTO LEVEEMPÄÄN*//*VAIHTO LEVEEMPÄÄN*//*VAIHTO LEVEEMPÄÄN*/
+    height: 40vw;
     margin: auto;
 }
 #footer {
@@ -84,106 +75,12 @@ video {
 
 /* Base */
 
-/* flavours.html:n CSS */
+
+/* AboutUs.html:n CSS */
 
 
-.imggrid {
-
-    display: inline-grid;
-    grid-template-columns: auto auto;
-    grid-gap: 80px;
-}
-
-.clearfix {
-    overflow: hidden;
-    position: relative;
-    cursor: pointer;
-    width: 400px;
-    height: 300px;
-}
-.clearfix img {
-    width: 400px;
-    height: 300px;
-}
-.clearfix:hover .overlay{
-    opacity: 0.6;
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: auto;
-    width: auto;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: black;
-}
-.overtext{
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-}
-
-.modal{
-    display:none;
-    position:fixed;
-    z-index:1;
-    padding-top:20px;
-    left:0;
-    right:0;
-    width:100%;
-    height:100%;
-    overflow:auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.5);
-
-}
-
-.modal-content{
-    background-color: rgb(60,60,60);
-    margin:15% auto;
-    padding:20px;
-    border:1px solid #888;
-    width:60%;
-    animation-name:animatetop;
-    animation-duration: 0.5s;
-}
-
-@keyframes animatetop{
-    from{top:-300px;opacity: 0;}
-    to{top:0;opacity:1;}
-}
-
-.close{
-    color:#aaa;
-    float:right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus{
-    color:#000;
-    text-decoration: none;
-    cursor:pointer;
-}
-
-
-
-/* flavours.html:n CSS */
-
-/* Coffee.html:n CSS */
-.container{
-    margin: 0 auto;
-    background: white;
-    text-align: center;
+.fbDiv {
+    margin: 0;
 }
 .parallax {
     min-height: 480px;
@@ -196,63 +93,56 @@ video {
     color: white;
     font-size: 50px
 }
-/////
 
-.container1{
-    background: #ffffff;
-    padding-left: 25vw;
-    padding-bottom: 100px;
-    padding-top: 100px;
-}
-.container2{
+.footer{
     display: flex;
     flex-direction: row;
-    background: black;
-    height: 300px;
-    width: 100%;
-    color: white;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: black;
     font-size: 15px;
-    padding-left: 18%;
-    padding-top: 100px;
+}
+.footer p {
+    padding: 2vw 3vw 2vw 3vw;
+}
+.endfooter #map {
+    padding: 0 2vw 0 2vw;
+}
+.endfooter {
+    background-color: black;
+    padding: 0 0 3vw 0;
+}
 
-}
-.container3{
-    padding-bottom: 100px;
-    background: black;
-    margin: auto;
-}
-.valit {
-    position: absolute;
-
-}
-.tiedot{
-    color: black;
-    padding-left: 33vw;
-    margin-bottom: 200px;
-}
-.otsikot{
+.otsikot {
     font-size: 18px;
+    text-align: center;
 }
 
-/////
+
 /*flex box*/
+
 
 .flex {
     display:flex;
     justify-content: center;
     flex-wrap: wrap;
     color: rgb(0,0,0);
-    padding:2%;
+    padding:1vw;
 }
 
-.flexboxspace{
-    padding:3%;
+.flexboxspace {
+    padding:1vw;
 }
+.flexboxspace p {
+    margin: 70px 0 70px 0;
+}
+
+
 /*flex box*/
 
 
+/* AboutUs.html:n CSS */
 
-/* Coffee.html:n CSS */
 
 /* Responsive */
 
@@ -260,47 +150,6 @@ video {
 @media screen and (max-width: 650px) {
     .nav li {
         padding: 5px;
-    }
-
-    #map {
-        width: 300px;
-        height: 200px;
-    }
-    img {
-        width: 300px;
-        height: 200px;
-    }
-    video {
-        width: 300px;
-        height: 200px;
-    }
-    .para {
-        margin: auto;
-    }
-    .imggrid {
-        grid-gap: 15px;
-    }
-    .clearfix {
-        width: 150px;
-        height: 100px;
-    }
-    .clearfix img {
-        width: 150px;
-        height: 100px;
-    }
-}
-
-@media screen and (max-width: 1130px) {
-    .imggrid {
-        grid-gap: 30px;
-    }
-    .clearfix {
-        width: 300px;
-        height: 200px;
-    }
-    .clearfix img {
-        width: 300px;
-        height: 200px;
     }
 }
 
