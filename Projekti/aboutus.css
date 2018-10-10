@@ -196,26 +196,27 @@ video {
     color: white;
     font-size: 50px
 }
-.container1{
-    background: #ffffff;
-    padding-left: 25vw;
-    padding-bottom: 100px;
-    padding-top: 100px;
-}
+
 .container2{
     background: black;
     height: 400px;
     width: 100%;
 }
-.valit {
-    position: absolute;
+/*flex box*/
 
+.flex {
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: rgb(0,0,0);
+    padding:2%;
 }
-.tiedot{
-    color: black;
-    padding-left: 33vw;
-    margin-bottom: 200px;
+
+.flexboxspace{
+    padding:3%;
 }
+/*flex box*/
+
 
 
 /* Coffee.html:n CSS */
