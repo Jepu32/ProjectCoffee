@@ -1,0 +1,171 @@
+/* Base */
+
+body {
+    font-family: Avenir, sans-serif;
+    color: white;
+    margin: 0;
+}
+
+header {
+    color: #fff;
+    text-align: center;
+    border-radius: 7px;
+}
+
+.head {
+    text-align: center;
+
+}
+
+#nav ul {
+    position: fixed;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 4;
+}
+
+#nav {
+    text-align: center;
+}
+
+#nav li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+
+}
+
+#nav a {
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 10px 30px 10px 30px;
+}
+
+#nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#nav .selected {
+    background-color: darkred;
+}
+
+main {
+    margin: 8px;
+    text-align: center;
+}
+
+
+#map {
+    width: 60vw;               /*VAIHTO LEVEEMPÄÄN*//*VAIHTO LEVEEMPÄÄN*//*VAIHTO LEVEEMPÄÄN*/
+    height: 40vw;
+    margin: auto;
+}
+
+/* Base */
+
+
+/* AboutUs.html:n CSS */
+
+.feedback {
+    color: black;
+    text-align: center;
+}
+
+.fbDiv {
+    margin: 0;
+}
+
+.parallax {
+    min-height: 480px;
+    background: transparent;
+    text-align: center;
+}
+
+.info{
+    z-index: 2;
+    position: relative;
+    color: white;
+    font-size: 50px
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.9);
+    font-size: 15px;
+    text-align: center;
+}
+.footer p {
+    padding: 2vw 3vw 2vw 3vw;
+}
+
+.footer a {
+    color: white;
+}
+
+.footer a:visited {
+    color: dimgrey;
+}
+
+.endfooter #map {
+    padding: 0 2vw 0 2vw;
+}
+
+.endfooter {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 0 0 3vw 0;
+}
+
+.otsikot {
+    font-size: 18px;
+}
+
+
+/*flex box*/
+
+
+.flex {
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: rgb(0,0,0);
+    padding:1vw;
+}
+
+.flexboxspace {
+    padding:1vw;
+}
+
+.flexboxspace p {
+    margin: 70px 0 70px 0;
+}
+
+
+/*flex box*/
+
+
+/* AboutUs.html:n CSS */
+
+
+/* Responsive */
+
+
+@media screen and (max-width: 650px) {
+    #nav li {
+        padding: 5px;
+    }
+
+    #nav ul {
+        position: sticky;
+        background-color: rgba(0, 0, 0, 1);
+    }
+}
+
+
+/* Responsive */
